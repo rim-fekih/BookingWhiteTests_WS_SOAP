@@ -31,17 +31,17 @@ public class WhiteTestService {
 		Address a1 = new Address();
 		a1.setCity("city1");
 		a1.setStreet("street1");
-		a1.setPosteCode("123456");
+		a1.setPosteCode("1");
 		
 		Address a2 = new Address();
 		a2.setCity("city2");
 		a2.setStreet("street2");
-		a2.setPosteCode("123456");
+		a2.setPosteCode("2");
 		
 		Address a3 = new Address();
 		a3.setCity("city3");
 		a3.setStreet("street3");
-		a3.setPosteCode("123456");
+		a3.setPosteCode("3");
 		
 		Address falseAddress = new Address();
 		falseAddress.setCity("false city");
@@ -56,7 +56,7 @@ public class WhiteTestService {
 		exams.add(new Exam("code_OCP","OCP"));
 		
 		Student falseStudent = new Student (-1, "false",falseAddress);
-		Exam falseExam = new Exam ("-1","false");
+		Exam falseExam = new Exam ("Not Found","Not Found");
 		
 		WhiteTestResponse response = new ObjectFactory().createWhiteTestResponse();
 		

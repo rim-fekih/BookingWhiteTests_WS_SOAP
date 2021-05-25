@@ -20,7 +20,7 @@ public class ExamsListService {
 		ExamsResponse response = new ObjectFactory().createExamsResponse();
 		if (examRequest.isListExams())
 		{
-			System.out.println("--------------------------- am here --------------------------------------");
+			System.out.println("HERE");
 
 			response.setExam(AvailableExams);
 		}
